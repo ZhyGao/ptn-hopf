@@ -1,0 +1,14 @@
+{
+  "name": "full",
+  "description": "Original individual fitting grid and combined stimulation range for this participant.",
+  "g_start": 0.0,
+  "g_end": 0.5,
+  "g_step": 0.005,
+  "fit_repeats": 200,
+  "a_start": -0.4,
+  "a_end": 0.4,
+  "a_step": 0.01,
+  "stimulation_repeats": 50,
+  "noise_strength": 0.02,
+  "baseline_a": 0.0
+}

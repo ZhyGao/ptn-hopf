@@ -1,0 +1,6 @@
+# Versions used for the checked-in run (Python 3.12).
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.2
+numba==0.60.0
+threadpoolctl==3.5.0

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ptn-hopf-demo"
+version = "0.1.0"
+description = "Single-participant PTN Hopf fitting and bilateral stimulation example"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3", "scipy>=1.10,<2", "matplotlib>=3.7,<4",
+  "numba>=0.59,<1", "threadpoolctl>=3.1,<4",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+ptn-hopf-demo = "ptn_hopf.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ptn_hopf*"]
+
+[tool.setuptools.data-files]
+"share/ptn-hopf-demo/configs" = ["configs/full.json"]
+"share/ptn-hopf-demo/data" = ["data/ptn_demo.npz", "data/metadata.json", "data/aal116_regions.csv", "data/bilateral_targets.csv", "data/state_centers.csv", "data/README.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

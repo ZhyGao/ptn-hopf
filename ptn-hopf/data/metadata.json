@@ -1,0 +1,25 @@
+{
+  "sample_id": "PTN_demo_01",
+  "atlas": "AAL116",
+  "n_regions": 116,
+  "n_states": 2,
+  "n_timepoints": 198,
+  "tr_seconds": 3.0,
+  "dt_seconds": 0.15,
+  "sc_max_after_scaling": 0.2,
+  "noise_strength": 0.02,
+  "baseline_a": 0.0,
+  "hlc_fo_participants": 46,
+  "hlc_tpm_participants": 46,
+  "state_assignment": "Manhattan distance to supplied empirical centers; state order is fixed",
+  "data_type": "Real processed research data; no raw images, BOLD timeseries or clinical records",
+  "selection": "Previously analyzed PTN example with complete model inputs and empirical state-1 FO below the HLC group mean. Illustrative selection, not representative sampling.",
+  "frequency_units": "omega in radians/second",
+  "seed_note": "Numeric seed base preserves the source run independently of the public example identifier. Repeat seed = seed_base + round(G * 100000) * 1000 + repeat_index.",
+  "sha256": {
+    "aal116_regions.csv": "0ce62d04b9e09ab0a15148005e7ce02c6e34a68efffe63be97d192f8457806b8",
+    "bilateral_targets.csv": "bd710e19b5a5dd199a0cb49f50ba23a5c883d1c242961e39fbff21dacc80b291",
+    "ptn_demo.npz": "b0d39cae6e2bef0d9c48d375be50b14e976cebe47e0e9e61ad03bd9a0873779d"
+  },
+  "state_centers_csv": "state_centers.csv: human-readable export of the canonical 2x116 array in ptn_demo.npz; the simulator reads the NPZ array."
+}
